@@ -1,6 +1,7 @@
 import DayOne from "./days/DayOne";
+import DayTwo from "./days/DayTwo";
 
-const currentDay = new DayOne();
+const currentDay = new DayTwo();
 
 try {
     const partOne = currentDay.getPartOne();

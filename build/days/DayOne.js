@@ -8,29 +8,26 @@ var DayOne = /** @class */ (function () {
     function DayOne() {
         this.getPartOne = function () {
             var data = FileReader_1.default.getNumericData("dayOne");
-            var result;
-            data.forEach(function (num1) {
-                data.forEach(function (num2) {
-                    if (num1 + num2 === 2020) {
-                        result = num1 * num2;
+            for (var i = 0; i < data.length; i++) {
+                for (var j = 0; j < data.length; j++) {
+                    if (data[i] + data[j] === 2020) {
+                        return data[i] + data[j];
                     }
-                });
-            });
-            return result;
+                }
+            }
+            throw new Error("Not found");
         };
         this.getPartTwo = function () {
             var data = FileReader_1.default.getNumericData("dayOne");
-            var result;
-            data.forEach(function (num1) {
-                data.forEach(function (num2) {
-                    data.forEach(function (num3) {
-                        if (num1 + num2 + num3 === 2020) {
-                            result = num1 * num2 * num3;
+            for (var i = 0; i < data.length; i++) {
+                for (var j = 0; j < data.length; j++) {
+                    for (var k = 0; k < data.length; k++)
+                        if (data[i] + data[j] + data[k] === 2020) {
+                            return data[i] + data[j] + data[k];
                         }
-                    });
-                });
-            });
-            return result;
+                }
+            }
+            throw new Error("Not found");
         };
     }
     return DayOne;
