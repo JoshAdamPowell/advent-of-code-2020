@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var DayTwo_1 = __importDefault(require("./days/DayTwo"));
-var currentDay = new DayTwo_1.default();
+var DayThree_1 = __importDefault(require("./days/DayThree"));
+var currentDay = new DayThree_1.default();
 try {
     var partOne = currentDay.getPartOne();
     console.log("Result for part one:");
